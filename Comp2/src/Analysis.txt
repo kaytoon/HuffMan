@@ -1,0 +1,5 @@
+Empirical Analysis:In order to get extra credit for implementing another collision handling strategy you must provide a short analysis of the performance of your strategy to linear probing. Include in this analysis which of the two methods you think worked better with this data (if either) and provide evidence in the form of statistics to back up your analysis.
+
+My partner and I found that quadratic probing was a better alternative to handling collisions than linear probing because with quadratic probing (based on our statistics) the maximum number of quadratic probes were 27, and the average quadratic probe was 0.83. However, when using linear probing (based on our statistics) the maximum number of linear probes were 289, and the average linear probe was 1.48. 
+
+We concluded that quadratic probing outperforms linear probing because quadratic probing reduces clustering, making it more likely to hit an empty bucket and stop probing whereas linear probing is notorious for clustering. With reduced clustering, you will be more likely to find and insert to an empty bucket, and in return be able to more quickly search for that value.
